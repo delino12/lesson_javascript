@@ -12,6 +12,12 @@
 		<ul id="fruits-list"></ul>
 	</div>
 
+	<div style="margin: 30%;">
+		<h1>These are list of books to read</h1>
+		<p>The book Shelf!</p>
+		<ol id="books_shelf"></ol>
+	</div>
+
 
 	<script>
 		var fruits = new Array('apple', 'mango', 'orange', 'grape', 'berries', 'almond');
@@ -41,9 +47,17 @@
 		fruits.forEach(fruit => {
 			list_element.innerHTML += `
 				<li> ${fruit} </li>
+		
+		
 			`;
 		});
-		
+		 var books = Array ('half of a yellow sun', 'lions jewel', 'Super ted');
+		 var list_element = document.getElementById('books_shelf');
+
+		 for (i=0; i<=books_shelf; i++ ) {
+		 list_element.innerhtml +=
+		 	<ol> ${books} </ol>
+		 }
 	</script>
 </body>
 </html>
